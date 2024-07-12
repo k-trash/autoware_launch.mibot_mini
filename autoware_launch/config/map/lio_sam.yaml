@@ -2,8 +2,8 @@
   ros__parameters:
 
     # Topics
-    pointCloudTopic: "/livox/lidar"                   # Point cloud data
-    imuTopic: "/livox/imu"                        # IMU data
+    pointCloudTopic: "/ring_cloud"                   # Point cloud data
+    imuTopic: "imu_data"                        # IMU data
     odomTopic: "odometry/imu"                    # IMU pre-preintegration odometry, same frequency as IMU
     # gpsTopic: "odometry/gpsz"                    # GPS odometry topic from navsat, see module_navsat.launch file
 
@@ -37,12 +37,12 @@
     #imuGyrNoise: 1.5636343949698187e-03
     #imuAccBiasN: 6.4356659353532566e-05
     #imuGyrBiasN: 3.5640318696367613e-05
-    imuAccNoise: 3.9939570888238808e-10
-    imuGyrNoise: 1.5636343949698187e-10
-    imuAccBiasN: 6.4356659353532566e-20
-    imuGyrBiasN: 3.5640318696367613e-10
+    imuAccNoise: 3.9939570888238808e-2
+    imuGyrNoise: 1.5636343949698187e-4
+    imuAccBiasN: 6.4356659353532566e-4
+    imuGyrBiasN: 3.5640318696367613e-4
 
-    imuGravity: 9.80511
+    imuGravity: 0.98
     imuRPYWeight: 0.01
 
     extrinsicTrans:  [ 0.0,  0.0,  0.0 ]

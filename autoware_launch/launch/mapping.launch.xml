@@ -66,6 +66,10 @@
     <include file="$(find-pkg-share autoware_launch)/launch/components/tier4_sensing_component.launch.xml"/>
   </group>
 
+  <node_container pkg="rclcpp_components" exec="component_container_mt" name="livox_ring_container" namespace="livox_ring" args="">
+	<composable_node pkg="livox_ring" plugin="livox_ring::LivoxConvert" name="livox_ring" />
+  </node_container>
+
   <!-- LIO-SAM -->
   <include file="$(find-pkg-share lio_sam)/launch/run_mibot.launch.py">
 	<arg name="params_file" value="$(var lio_sam_param)" />
