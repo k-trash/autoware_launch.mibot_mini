@@ -33,9 +33,6 @@
 
   <group scoped="false">
     <!-- Vehicle -->
-    <let name="launch_vehicle_interface" value="false" if="$(var vehicle_simulation)"/>
-    <let name="launch_vehicle_interface" value="true" unless="$(var vehicle_simulation)"/>
-
     <include file="$(find-pkg-share autoware_launch)/launch/autoware.launch.xml">
       <!-- Common -->
       <arg name="map_path" value="$(var map_path)"/>
@@ -49,13 +46,13 @@
       <arg name="launch_localization" value="true"/>
       <arg name="launch_perception" value="false"/>
       <!-- Pointcloud container -->
-      <arg name="use_pointcloud_container" value="true"/>
+      <arg name="use_pointcloud_container" value="false"/>
       <!-- Vehicle -->
       <arg name="launch_vehicle_interface" value="true"/>
       <!-- System -->
-      <arg name="system_run_mode" value="planning_simulation"/>
-      <arg name="launch_system_monitor" value="$(var launch_system_monitor)"/>
-      <arg name="launch_dummy_diag_publisher" value="$(var launch_dummy_diag_publisher)"/>
+      <arg name="system_run_mode" value="online"/>
+      <arg name="launch_system_monitor" value="true"/>
+      <arg name="launch_dummy_diag_publisher" value="false"/>
       <!-- Map -->
       <arg name="lanelet2_map_file" value="$(var lanelet2_map_file)"/>
       <arg name="pointcloud_map_file" value="$(var pointcloud_map_file)"/>
