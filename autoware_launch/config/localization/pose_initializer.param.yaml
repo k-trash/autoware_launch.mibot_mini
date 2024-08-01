@@ -1,14 +1,14 @@
 /**:
   ros__parameters:
-    user_defined_initial_pose.enable: true
+    user_defined_initial_pose.enable: True
     user_defined_initial_pose.pose: [30,30,0,0,0,0,1]
     gnss_pose_timeout: 3.0 # [sec]
     stop_check_duration: 3.0 # [sec]
-    stop_check_enabled: false
-    gnss_enabled: false
-    ekf_enabled: false
-    yabloc_enabled: false
-    ndt_enabled: true
+    stop_check_enabled: False
+    gnss_enabled: False
+    ekf_enabled: False
+    yabloc_enabled: False
+    ndt_enabled: True
 
     # from gnss
     gnss_particle_covariance:
