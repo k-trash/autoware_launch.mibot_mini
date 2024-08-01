@@ -1,7 +1,7 @@
 /**:
   ros__parameters:
     user_defined_initial_pose.enable: true
-    user_defined_initial_pose.pose: [30, 30, 0, 0, 0, 0, 1]
+    user_defined_initial_pose.pose: [30.0,30.0,0.0,0.0,0.0,0.0,1.0]
     gnss_pose_timeout: 3.0 # [sec]
     stop_check_duration: 3.0 # [sec]
     stop_check_enabled: false
