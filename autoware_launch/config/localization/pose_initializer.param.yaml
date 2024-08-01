@@ -4,8 +4,8 @@
     stop_check_duration: 3.0 # [sec]
     stop_check_enabled: false
     gnss_enabled: false
-    ekf_enabled: false
-    yabloc_enabled: false
+    ekf_enabled: true
+    yabloc_enabled: true
     ndt_enabled: true
 
     # from gnss
