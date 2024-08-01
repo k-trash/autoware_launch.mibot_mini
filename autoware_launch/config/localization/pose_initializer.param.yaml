@@ -2,6 +2,7 @@
   ros__parameters:
     gnss_pose_timeout: 3.0 # [sec]
     stop_check_duration: 3.0 # [sec]
+    stop_check_enabled: false
 
     # from gnss
     gnss_particle_covariance:
