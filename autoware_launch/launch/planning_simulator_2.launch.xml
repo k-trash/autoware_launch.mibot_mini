@@ -63,7 +63,10 @@
     </include>
   </group>
 
-  <!-- Simulator -->
+  <include file="$(find-pkg-share dummy_perception_publisher)/launch/dummy_perception_publisher.launch.xml">
+  </include>
+
+  <!-- Simulator >
   <group>
     <let name="launch_dummy_perception" value="true"/>
     <let name="launch_dummy_vehicle" value="false"/>
@@ -83,7 +86,7 @@
       <arg name="initial_engage_state" value="$(var initial_engage_state)"/>
       <arg name="vehicle_info_param_file" value="$(find-pkg-share $(var vehicle_model)_description)/config/vehicle_info.param.yaml"/>
     </include>
-  </group>
+  </group-->
 
-  <node pkg="tf2_ros" exec="static_transform_publisher" name="static_transform_publisher" args="30.0 30.0 0.0 0.0 0.0 0.0 map base_link" />
+  <!--node pkg="tf2_ros" exec="static_transform_publisher" name="static_transform_publisher" args="30.0 30.0 0.0 0.0 0.0 0.0 map base_link" /-->
 </launch>
